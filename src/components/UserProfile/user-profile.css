@@ -1,0 +1,65 @@
+.root {
+    width: 25rem;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.info {
+    background: #fff;
+    text-align: center;
+    padding: 1.875rem .9375rem;
+    border-radius: .3125rem .3125rem 0 0;
+}
+
+.info img {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0.5);
+}
+
+.info h2 a {
+    font-size: 1.65rem;
+    color: #2368bd;
+}
+
+.info h3 {
+    font-size: 1.1885rem;
+    color: #bdcbce;
+}
+
+.state {
+    background: #1a4e8e;
+    text-align: center;
+    padding: 1.875rem .9375rem;
+    border-radius: 0 0 .3125rem .3125rem;
+}
+
+.state li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.state a {
+    color: #fff;
+}
+
+.state i {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+
+.state span {
+    font-size: .844rem;
+    letter-spacing: .0625rem;
+    color: #fff;
+}
