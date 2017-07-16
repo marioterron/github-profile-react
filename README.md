@@ -5,7 +5,6 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
 
 ## Github Profile Card w/ React
----
 
 This repo contains a project build with React in which users can search for a Github user and see information of their profile.
 
