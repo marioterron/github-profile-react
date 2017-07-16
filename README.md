@@ -1,4 +1,6 @@
-[![ES6](https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/) [![Webpack](https://github.com/MarioTerron/logo-images/blob/master/logos/webpack.png)](https://webpack.github.io/) [![React](https://github.com/MarioTerron/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/)
+<a href="http://www.ecma-international.org/ecma-262/6.0/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png" height= "60px"></a>
+<a href="https://webpack.github.io/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/webpack.png" height= "60px"></a>
+<a href="https://facebook.github.io/react/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/react.png" height= "60px"></a>
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
 
