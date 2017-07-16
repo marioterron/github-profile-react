@@ -1,5 +1,4 @@
-[![React](https://github.com/MarioTerron/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/)
-[![HTML5,CSS3 and JS](https://github.com/MarioTerron/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/)
+[![ES6](https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/) [![Webpack](https://github.com/MarioTerron/logo-images/blob/master/logos/webpack.png)](https://webpack.github.io/) [![React](https://github.com/MarioTerron/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/)
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
 
