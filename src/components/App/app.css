@@ -27,3 +27,37 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
+#card {
+    width: 25rem;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.footer {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #b4c4c8;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.footer span {
+  color: #F03A47;
+}
+
+.footer a {
+  font-weight: 600;
+  color: #b4c4c8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

@@ -1,13 +1,3 @@
-.root {
-    width: 25rem;
-    margin: auto;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
 .info {
     background: #fff;
     text-align: center;
@@ -62,4 +52,21 @@
     font-size: .844rem;
     letter-spacing: .0625rem;
     color: #fff;
+}
+
+.notFound {
+    background: #fff;
+    padding: 1.875rem;
+    text-align: center;
+}
+
+.notFound h2 {
+    font-size: 2rem;
+    color: #2368bd;
+    margin-bottom: .625rem;
+}
+
+.notFound p {
+    font-size: 1rem;
+    color: #a3b6bb;
 }

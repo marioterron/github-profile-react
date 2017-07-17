@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 
-import styles from './user-profile.css'
+import styles from './profile.css'
 
-class UserList extends Component {
+class Profile extends Component {
   constructor (props) {
     super(props)
   }
+
   render () {
     return (
       <div className={styles.root}>
@@ -45,4 +46,4 @@ class UserList extends Component {
   }
 }
 
-export default UserList
+export default Profile
