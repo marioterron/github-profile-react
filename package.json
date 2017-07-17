@@ -6,6 +6,7 @@
   "scripts": {
     "prestart": "npm install",
     "build": "webpack --colors",
+    "deploy": "npm run build && surge -p dist -d github-profile-react.surge.sh",
     "serve": "webpack-dev-server --content-base dist/ --colors --progress",
     "start": "npm run build && npm run serve"
   },
@@ -27,6 +28,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "surge": "^0.19.0"
   }
 }

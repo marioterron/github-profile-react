@@ -8,6 +8,9 @@
 
 This repo contains a project build with React in which users can search for a Github user and see information of their profile.
 
+##### [Click here to try the live demo][0]
+---
+
 ### Installation
 
 * You need to have installed `NodeJS` with `npm`.
@@ -26,4 +29,5 @@ All dependencies will be installed automatically.
 ### API
 * [Github][1]
 
+[0]: http://github-profile-react.surge.sh/
 [1]: https://developer.github.com/v3/
