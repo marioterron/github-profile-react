@@ -1,38 +1,63 @@
 import React, {Component} from 'react'
-import styles from './app.css'
-import Profile from '../Profile'
 
-const URL = `https://api.github.com/users/MarioTerron`
+import styles from './app.css'
+import SearchProfile from '../SearchProfile'
+import Profile from '../Profile'
+import Footer from '../Footer'
+
+
+const URL = `https://api.github.com/users`
 
 class App extends Component {
   constructor () {
     super()
 
     this.state = {
-      user: {}
+      username: 'MarioTerron',
+      name: '',
+      avatar: '',
+      location: '',
+      repos: '',
+      followers: '',
+      following: '',
+      homeUrl: '',
+      notFound: ''
     }
   }
 
-  componentWillMount () {
-    fetch(`${URL}`)
+  fetchProfile (username) {
+    fetch(`${URL}/${username}`)
       .then(response => {
         return response.json()
       })
       .then(user => {
-        this.setState({ user })
+        this.setState({
+          username: user.login,
+          name: user.name,
+          avatar: user.avatar_url,
+          location: user.location,
+          repos: user.public_repos,
+          followers: user.followers,
+          following: user.following,
+          homeUrl: user.html_url,
+          notFound: user.message })
       })
       .catch(err => console.log('Oops! An error ocurred.'))
+  }
+
+  componentWillMount () {
+    this.fetchProfile(this.state.username)
   }
 
   render () {
     return (
       <div>
         <section id={styles.card}>
-          <Profile user={this.state.user} />
+          <SearchProfile fetchProfile={this.fetchProfile.bind(this)} />
+          <Profile user={this.state} />
         </section>
-        <div className={styles.footer}>Made with <span className="fa fa-heart"></span> by <a href="http://www.twitter.com/MarioTerron">Mario Terron</a></div>
+        <Footer />
       </div>
-
     )
   }
 }

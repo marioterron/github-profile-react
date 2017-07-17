@@ -8,41 +8,54 @@ class Profile extends Component {
   }
 
   render () {
-    return (
-      <div className={styles.root}>
-        <div className={styles.info}>
-          <a href="#">
-            <img src={this.props.user.avatar_url} alt="Profile image" />
-          </a>
-          <h2>
-            <a href={this.props.user.html_url}>{this.props.user.name}</a>
-          </h2>
-          <h3>{this.props.user.location}</h3>
+    if (this.props.user.notFound === 'Not Found')
+     return (
+       <div className={styles.root}>
+         <div className={styles.info}>
+           <div className={styles.notFound}>
+             <h2>Oops!</h2>
+             <p>Can't find this user. Try again.</p>
+           </div>
+         </div>
+       </div>
+     )
+    else {
+      return (
+        <div className={styles.root}>
+          <div className={styles.info}>
+            <a href="#">
+              <img src={this.props.user.avatar} alt="Profile image" />
+            </a>
+            <h2>
+              <a href={this.props.user.homeUrl}>{this.props.user.name}</a>
+            </h2>
+            <h3>{this.props.user.location}</h3>
+          </div>
+          <div className={styles.state}>
+            <ul>
+              <li>
+                <a href="#" target="_blank">
+                  <i>{this.props.user.followers}</i>
+                  <span>Followers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i>{this.props.user.repos}</i>
+                  <span>Repositories</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i>{this.props.user.following}</i>
+                  <span>Following</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className={styles.state}>
-          <ul>
-            <li>
-              <a href="#">
-                <i>{this.props.user.followers}</i>
-                <span>Followers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i>{this.props.user.public_repos}</i>
-                <span>Repositories</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i>{this.props.user.following}</i>
-                <span>Following</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    )
+      )
+    }
   }
 }
 

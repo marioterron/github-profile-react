@@ -1,0 +1,23 @@
+.root {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #b4c4c8;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.root span {
+  color: #F03A47;
+}
+
+.root a {
+  font-weight: 600;
+  color: #b4c4c8;
+}
+
+.root a:hover {
+  text-decoration: underline;
+}
